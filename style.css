@@ -1,0 +1,86 @@
+/* 기본 배경 및 글꼴 설정 */
+body {
+    font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* 헤더 디자인 */
+header {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    text-align: center;
+    padding: 40px 20px;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+header p {
+    margin: 10px 0 0 0;
+    opacity: 0.9;
+}
+
+/* 내비게이션 바 (카테고리 메뉴) */
+nav {
+    background-color: #1e293b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    margin: 0;
+    padding: 15px 10px;
+    gap: 15px;
+}
+nav ul::-webkit-scrollbar { display: none; } /* 스크롤바 숨기기 */
+nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+nav a:hover {
+    color: #ffffff;
+    background-color: #3b82f6;
+}
+
+/* 메인 콘텐츠 영역 */
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #1e293b;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 1px solid #334155;
+}
+section h2 {
+    margin-top: 0;
+    color: #3b82f6;
+    border-bottom: 2px solid #334155;
+    padding-bottom: 10px;
+}
+
+/* 반응형 모바일 스타일 */
+@media (max-width: 768px) {
+    header h1 { font-size: 2rem; }
+    nav ul { justify-content: flex-start; }
+}
